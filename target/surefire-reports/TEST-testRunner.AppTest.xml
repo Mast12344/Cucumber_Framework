@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="testRunner.AppTest" time="311.752" tests="9" errors="0" skipped="0" failures="7">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\mmast\eclipse-workspace\ERP_Cucumber\target\test-classes;C:\Users\mmast\eclipse-workspace\ERP_Cucumber\target\classes;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-java\4.25.0\selenium-java-4.25.0.jar;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-api\4.25.0\selenium-api-4.25.0.jar;C:\Users\mmast\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.25.0\selenium-chrome-driver-4.25.0.jar;C:\Users\mmast\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.25.0\selenium-chromium-driver-4.25.0.jar;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-json\4.25.0\selenium-json-4.25.0.jar;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.25.0\selenium-manager-4.25.0.jar;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v127\4.25.0\selenium-devtools-v127-4.25.0.jar;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v128\4.25.0\selenium-devtools-v128-4.25.0.jar;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v129\4.25.0\selenium-devtools-v129-4.25.0.jar;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.25.0\selenium-devtools-v85-4.25.0.jar;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.25.0\selenium-edge-driver-4.25.0.jar;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.25.0\selenium-firefox-driver-4.25.0.jar;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-http\4.25.0\selenium-http-4.25.0.jar;C:\Users\mmast\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.25.0\selenium-ie-driver-4.25.0.jar;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.25.0\selenium-remote-driver-4.25.0.jar;C:\Users\mmast\.m2\repository\com\google\guava\guava\33.3.0-jre\guava-33.3.0-jre.jar;C:\Users\mmast\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\mmast\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\mmast\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\mmast\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\mmast\.m2\repository\com\google\errorprone\error_prone_annotations\2.28.0\error_prone_annotations-2.28.0.jar;C:\Users\mmast\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\mmast\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\mmast\.m2\repository\io\opentelemetry\opentelemetry-api\1.42.1\opentelemetry-api-1.42.1.jar;C:\Users\mmast\.m2\repository\io\opentelemetry\opentelemetry-context\1.42.1\opentelemetry-context-1.42.1.jar;C:\Users\mmast\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.42.1\opentelemetry-exporter-logging-1.42.1.jar;C:\Users\mmast\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.42.1\opentelemetry-sdk-common-1.42.1.jar;C:\Users\mmast\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.42.1\opentelemetry-sdk-extension-autoconfigure-spi-1.42.1.jar;C:\Users\mmast\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.42.1\opentelemetry-sdk-extension-autoconfigure-1.42.1.jar;C:\Users\mmast\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.42.1-alpha\opentelemetry-api-incubator-1.42.1-alpha.jar;C:\Users\mmast\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.42.1\opentelemetry-sdk-trace-1.42.1.jar;C:\Users\mmast\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.42.1\opentelemetry-sdk-1.42.1.jar;C:\Users\mmast\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.42.1\opentelemetry-sdk-metrics-1.42.1.jar;C:\Users\mmast\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.42.1\opentelemetry-sdk-logs-1.42.1.jar;C:\Users\mmast\.m2\repository\net\bytebuddy\byte-buddy\1.15.1\byte-buddy-1.15.1.jar;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-os\4.25.0\selenium-os-4.25.0.jar;C:\Users\mmast\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.25.0\selenium-safari-driver-4.25.0.jar;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-support\4.25.0\selenium-support-4.25.0.jar;C:\Users\mmast\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar;C:\Users\mmast\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\mmast\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\mmast\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\mmast\.m2\repository\io\cucumber\cucumber-java\7.25.0\cucumber-java-7.25.0.jar;C:\Users\mmast\.m2\repository\io\cucumber\cucumber-core\7.25.0\cucumber-core-7.25.0.jar;C:\Users\mmast\.m2\repository\io\cucumber\cucumber-gherkin\7.25.0\cucumber-gherkin-7.25.0.jar;C:\Users\mmast\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.25.0\cucumber-gherkin-messages-7.25.0.jar;C:\Users\mmast\.m2\repository\io\cucumber\gherkin\33.0.0\gherkin-33.0.0.jar;C:\Users\mmast\.m2\repository\io\cucumber\messages\28.0.0\messages-28.0.0.jar;C:\Users\mmast\.m2\repository\io\cucumber\pretty-formatter\0.3.0\pretty-formatter-0.3.0.jar;C:\Users\mmast\.m2\repository\io\cucumber\query\13.6.0\query-13.6.0.jar;C:\Users\mmast\.m2\repository\io\cucumber\testng-xml-formatter\0.4.0\testng-xml-formatter-0.4.0.jar;C:\Users\mmast\.m2\repository\io\cucumber\tag-expressions\6.1.2\tag-expressions-6.1.2.jar;C:\Users\mmast\.m2\repository\io\cucumber\cucumber-expressions\18.0.1\cucumber-expressions-18.0.1.jar;C:\Users\mmast\.m2\repository\io\cucumber\datatable\7.25.0\datatable-7.25.0.jar;C:\Users\mmast\.m2\repository\io\cucumber\cucumber-plugin\7.25.0\cucumber-plugin-7.25.0.jar;C:\Users\mmast\.m2\repository\io\cucumber\docstring\7.25.0\docstring-7.25.0.jar;C:\Users\mmast\.m2\repository\io\cucumber\html-formatter\21.13.0\html-formatter-21.13.0.jar;C:\Users\mmast\.m2\repository\io\cucumber\junit-xml-formatter\0.8.0\junit-xml-formatter-0.8.0.jar;C:\Users\mmast\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\mmast\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\mmast\.m2\repository\io\cucumber\cucumber-junit\7.25.0\cucumber-junit-7.25.0.jar;C:\Users\mmast\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\mmast\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\mmast\.m2\repository\io\cucumber\cucumber-testng\7.25.0\cucumber-testng-7.25.0.jar;C:\Users\mmast\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\mmast\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\mmast\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\mmast\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\mmast\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\mmast\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21.0.10\bin"/>
+    <property name="sun.java.command" value="C:\Users\mmast\AppData\Local\Temp\surefire16175249301394641094\surefirebooter-20260406175330439_3.jar C:\Users\mmast\AppData\Local\Temp\surefire16175249301394641094 2026-04-06T17-53-29_768-jvmRun1 surefire-20260406175330439_1tmp surefire_0-20260406175330439_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\mmast\eclipse-workspace\ERP_Cucumber\target\test-classes;C:\Users\mmast\eclipse-workspace\ERP_Cucumber\target\classes;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-java\4.25.0\selenium-java-4.25.0.jar;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-api\4.25.0\selenium-api-4.25.0.jar;C:\Users\mmast\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.25.0\selenium-chrome-driver-4.25.0.jar;C:\Users\mmast\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.25.0\selenium-chromium-driver-4.25.0.jar;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-json\4.25.0\selenium-json-4.25.0.jar;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.25.0\selenium-manager-4.25.0.jar;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v127\4.25.0\selenium-devtools-v127-4.25.0.jar;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v128\4.25.0\selenium-devtools-v128-4.25.0.jar;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v129\4.25.0\selenium-devtools-v129-4.25.0.jar;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.25.0\selenium-devtools-v85-4.25.0.jar;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.25.0\selenium-edge-driver-4.25.0.jar;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.25.0\selenium-firefox-driver-4.25.0.jar;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-http\4.25.0\selenium-http-4.25.0.jar;C:\Users\mmast\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.25.0\selenium-ie-driver-4.25.0.jar;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.25.0\selenium-remote-driver-4.25.0.jar;C:\Users\mmast\.m2\repository\com\google\guava\guava\33.3.0-jre\guava-33.3.0-jre.jar;C:\Users\mmast\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\mmast\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\mmast\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\mmast\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\mmast\.m2\repository\com\google\errorprone\error_prone_annotations\2.28.0\error_prone_annotations-2.28.0.jar;C:\Users\mmast\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\mmast\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\mmast\.m2\repository\io\opentelemetry\opentelemetry-api\1.42.1\opentelemetry-api-1.42.1.jar;C:\Users\mmast\.m2\repository\io\opentelemetry\opentelemetry-context\1.42.1\opentelemetry-context-1.42.1.jar;C:\Users\mmast\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.42.1\opentelemetry-exporter-logging-1.42.1.jar;C:\Users\mmast\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.42.1\opentelemetry-sdk-common-1.42.1.jar;C:\Users\mmast\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.42.1\opentelemetry-sdk-extension-autoconfigure-spi-1.42.1.jar;C:\Users\mmast\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.42.1\opentelemetry-sdk-extension-autoconfigure-1.42.1.jar;C:\Users\mmast\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.42.1-alpha\opentelemetry-api-incubator-1.42.1-alpha.jar;C:\Users\mmast\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.42.1\opentelemetry-sdk-trace-1.42.1.jar;C:\Users\mmast\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.42.1\opentelemetry-sdk-1.42.1.jar;C:\Users\mmast\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.42.1\opentelemetry-sdk-metrics-1.42.1.jar;C:\Users\mmast\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.42.1\opentelemetry-sdk-logs-1.42.1.jar;C:\Users\mmast\.m2\repository\net\bytebuddy\byte-buddy\1.15.1\byte-buddy-1.15.1.jar;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-os\4.25.0\selenium-os-4.25.0.jar;C:\Users\mmast\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.25.0\selenium-safari-driver-4.25.0.jar;C:\Users\mmast\.m2\repository\org\seleniumhq\selenium\selenium-support\4.25.0\selenium-support-4.25.0.jar;C:\Users\mmast\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar;C:\Users\mmast\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\mmast\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\mmast\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\mmast\.m2\repository\io\cucumber\cucumber-java\7.25.0\cucumber-java-7.25.0.jar;C:\Users\mmast\.m2\repository\io\cucumber\cucumber-core\7.25.0\cucumber-core-7.25.0.jar;C:\Users\mmast\.m2\repository\io\cucumber\cucumber-gherkin\7.25.0\cucumber-gherkin-7.25.0.jar;C:\Users\mmast\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.25.0\cucumber-gherkin-messages-7.25.0.jar;C:\Users\mmast\.m2\repository\io\cucumber\gherkin\33.0.0\gherkin-33.0.0.jar;C:\Users\mmast\.m2\repository\io\cucumber\messages\28.0.0\messages-28.0.0.jar;C:\Users\mmast\.m2\repository\io\cucumber\pretty-formatter\0.3.0\pretty-formatter-0.3.0.jar;C:\Users\mmast\.m2\repository\io\cucumber\query\13.6.0\query-13.6.0.jar;C:\Users\mmast\.m2\repository\io\cucumber\testng-xml-formatter\0.4.0\testng-xml-formatter-0.4.0.jar;C:\Users\mmast\.m2\repository\io\cucumber\tag-expressions\6.1.2\tag-expressions-6.1.2.jar;C:\Users\mmast\.m2\repository\io\cucumber\cucumber-expressions\18.0.1\cucumber-expressions-18.0.1.jar;C:\Users\mmast\.m2\repository\io\cucumber\datatable\7.25.0\datatable-7.25.0.jar;C:\Users\mmast\.m2\repository\io\cucumber\cucumber-plugin\7.25.0\cucumber-plugin-7.25.0.jar;C:\Users\mmast\.m2\repository\io\cucumber\docstring\7.25.0\docstring-7.25.0.jar;C:\Users\mmast\.m2\repository\io\cucumber\html-formatter\21.13.0\html-formatter-21.13.0.jar;C:\Users\mmast\.m2\repository\io\cucumber\junit-xml-formatter\0.8.0\junit-xml-formatter-0.8.0.jar;C:\Users\mmast\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\mmast\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\mmast\.m2\repository\io\cucumber\cucumber-junit\7.25.0\cucumber-junit-7.25.0.jar;C:\Users\mmast\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\mmast\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\mmast\.m2\repository\io\cucumber\cucumber-testng\7.25.0\cucumber-testng-7.25.0.jar;C:\Users\mmast\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\mmast\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\mmast\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\mmast\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\mmast\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\mmast\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\mmast"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21.0.10"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\mmast\eclipse-workspace\ERP_Cucumber"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\mmast\AppData\Local\Temp\surefire16175249301394641094\surefirebooter-20260406175330439_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.10+8-LTS-217"/>
+    <property name="user.name" value="mmast"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\mmast\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\mmast\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.10"/>
+    <property name="user.dir" value="C:\Users\mmast\eclipse-workspace\ERP_Cucumber"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21.0.10\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\HP\HP One Agent;C:\Program Files\Java\jdk-21.0.10\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;E:\apache-maven-3.9.14\bin;C:\Users\mmast\AppData\Local\Microsoft\WindowsApps;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.10+8-LTS-217"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;add supplier&quot;, &quot;Suppliers and Customer&quot;](1)" classname="testRunner.AppTest" time="34.316">
+    <failure message="element not interactable&#10;  (Session info: chrome=146.0.7680.178)&#10;Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [33ffde92c74056d99e31cf31069898f4, clickElement {id=f.0100D31257A323A931B560EB8A815A68.d.0DE448A1A837F804E11A1153E2BB8152.e.411}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\mmast\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63715}, goog:processID: 19708, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63715/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on windows (33ffde92c74056d99e31cf31069898f4)] -&gt; xpath: (//button[starts-with(text(),&apos;OK&apos;)])[6]]&#10;Session ID: 33ffde92c74056d99e31cf31069898f4" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=146.0.7680.178)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [33ffde92c74056d99e31cf31069898f4, clickElement {id=f.0100D31257A323A931B560EB8A815A68.d.0DE448A1A837F804E11A1153E2BB8152.e.411}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\mmast\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63715}, goog:processID: 19708, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63715/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (33ffde92c74056d99e31cf31069898f4)] -> xpath: (//button[starts-with(text(),'OK')])[6]]
+Session ID: 33ffde92c74056d99e31cf31069898f4
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at stepDefination.ERPSteps.user_click_alert_ok_button(ERPSteps.java:96)
+	at ✽.user click alert ok button(file:///C:/Users/mmast/eclipse-workspace/ERP_Cucumber/./featurefiles/ERP.feature:20)
+]]></failure>
+    <system-out><![CDATA[
+@tag @Suppliers
+&amp#27;[1mScenario Outline:&amp#27;[22m add supplier                                                                                                             &amp#27;[90m# file:///C:/Users/mmast/eclipse-workspace/ERP_Cucumber/./featurefiles/ERP.feature:27&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mUser is on the Login Page&amp#27;[0m                                                                                                        &amp#27;[90m# stepDefination.ERPSteps.user_is_on_the_login_page()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mUser enters username &amp#27;[1m"admin"&amp#27;[22m and password &amp#27;[1m"master"&amp#27;[22m&amp#27;[0m                                                                                &amp#27;[90m# stepDefination.ERPSteps.user_enters_username_and_password(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mclicks on Login button&amp#27;[0m                                                                                                             &amp#27;[90m# stepDefination.ERPSteps.clicks_on_login_button()&amp#27;[0m
+Dashboard Text Displayed In Home Page
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mDashboard should be displayed&amp#27;[0m                                                                                                     &amp#27;[90m# stepDefination.ERPSteps.dashboard_should_be_displayed()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22muser should navigate to add supplier page&amp#27;[0m                                                                                         &amp#27;[90m# stepDefination.ERPSteps.user_should_navigate_to_add_supplier_page()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mCapture Supplier number&amp#27;[0m                                                                                                            &amp#27;[90m# stepDefination.ERPSteps.capture_supplier_number()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22muser enter supplier details &amp#27;[1m"Doll Corp1"&amp#27;[22m,&amp#27;[1m"Street 12"&amp#27;[22m,&amp#27;[1m"New York"&amp#27;[22m,&amp#27;[1m"USA"&amp#27;[22m,&amp#27;[1m"Akheles61"&amp#27;[22m,&amp#27;[1m"1234567890"&amp#27;[22m,&amp#27;[1m"doll@test.com"&amp#27;[22m,&amp#27;[1m"9876543310"&amp#27;[22m,&amp#27;[1m"High"&amp#27;[22m&amp#27;[0m &amp#27;[90m# stepDefination.ERPSteps.user_enter_supplier_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22muser click add button&amp#27;[0m                                                                                                              &amp#27;[90m# stepDefination.ERPSteps.user_click_add_button()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22muser click confirm ok&amp#27;[0m                                                                                                              &amp#27;[90m# stepDefination.ERPSteps.user_click_confirm_ok()&amp#27;[0m
+  &amp#27;[31m✘&amp#27;[0m &amp#27;[31m&amp#27;[1mAnd &amp#27;[22muser click alert ok button&amp#27;[0m                                                                                                         &amp#27;[90m# stepDefination.ERPSteps.user_click_alert_ok_button()&amp#27;[0m
+        &amp#27;[31morg.openqa.selenium.ElementNotInteractableException: element not interactable
+          (Session info: chrome=146.0.7680.178)
+        Build info: version: '4.25.0', revision: '8a8aea2337'
+        System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+        Driver info: org.openqa.selenium.chrome.ChromeDriver
+        Command: [33ffde92c74056d99e31cf31069898f4, clickElement {id=f.0100D31257A323A931B560EB8A815A68.d.0DE448A1A837F804E11A1153E2BB8152.e.411}]
+        Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\mmast\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63715}, goog:processID: 19708, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63715/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+        Element: [[ChromeDriver: chrome on windows (33ffde92c74056d99e31cf31069898f4)] -> xpath: (//button[starts-with(text(),'OK')])[6]]
+        Session ID: 33ffde92c74056d99e31cf31069898f4
+        	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+        	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+        	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+        	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+        	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+        	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+        	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+        	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+        	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+        	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+        	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+        	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+        	at stepDefination.ERPSteps.user_click_alert_ok_button(ERPSteps.java:96)
+        	at ✽.user click alert ok button(file:///C:/Users/mmast/eclipse-workspace/ERP_Cucumber/./featurefiles/ERP.feature:20)&amp#27;[0m
+  &amp#27;[36m↷&amp#27;[0m &amp#27;[36m&amp#27;[1mAnd &amp#27;[22muser should search for supplier number&amp#27;[0m                                                                                             &amp#27;[90m# stepDefination.ERPSteps.user_should_search_for_supplier_number()&amp#27;[0m
+  &amp#27;[36m↷&amp#27;[0m &amp#27;[36m&amp#27;[1mThen &amp#27;[22muser should validate supplier number in table&amp#27;[0m                                                                                     &amp#27;[90m# stepDefination.ERPSteps.user_should_validate_supplier_number_in_table()&amp#27;[0m
+  &amp#27;[36m↷&amp#27;[0m &amp#27;[36m&amp#27;[1mWhen &amp#27;[22muser close browser&amp#27;[0m                                                                                                                &amp#27;[90m# stepDefination.ERPSteps.user_close_browser()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Apr 06, 2026 5:53:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+Apr 06, 2026 5:53:34 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;add supplier&quot;, &quot;Suppliers and Customer&quot;](2)" classname="testRunner.AppTest" time="41.039">
+    <failure message="element not interactable&#10;  (Session info: chrome=146.0.7680.178)&#10;Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [96ad5e177509fb65336232cf7a5fadf1, clickElement {id=f.AB483429724F1E6EE44F9D01008FAAED.d.669A116BC0F2064D535846B5EB64B766.e.301}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\mmast\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63410}, goog:processID: 12096, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63410/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on windows (96ad5e177509fb65336232cf7a5fadf1)] -&gt; xpath: (//button[starts-with(text(),&apos;OK&apos;)])[6]]&#10;Session ID: 96ad5e177509fb65336232cf7a5fadf1" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=146.0.7680.178)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [96ad5e177509fb65336232cf7a5fadf1, clickElement {id=f.AB483429724F1E6EE44F9D01008FAAED.d.669A116BC0F2064D535846B5EB64B766.e.301}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\mmast\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63410}, goog:processID: 12096, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63410/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (96ad5e177509fb65336232cf7a5fadf1)] -> xpath: (//button[starts-with(text(),'OK')])[6]]
+Session ID: 96ad5e177509fb65336232cf7a5fadf1
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at stepDefination.ERPSteps.user_click_alert_ok_button(ERPSteps.java:96)
+	at ✽.user click alert ok button(file:///C:/Users/mmast/eclipse-workspace/ERP_Cucumber/./featurefiles/ERP.feature:20)
+]]></failure>
+    <system-out><![CDATA[
+@tag @Suppliers
+&amp#27;[1mScenario Outline:&amp#27;[22m add supplier                                                                                                             &amp#27;[90m# file:///C:/Users/mmast/eclipse-workspace/ERP_Cucumber/./featurefiles/ERP.feature:28&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mUser is on the Login Page&amp#27;[0m                                                                                                        &amp#27;[90m# stepDefination.ERPSteps.user_is_on_the_login_page()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mUser enters username &amp#27;[1m"admin"&amp#27;[22m and password &amp#27;[1m"master"&amp#27;[22m&amp#27;[0m                                                                                &amp#27;[90m# stepDefination.ERPSteps.user_enters_username_and_password(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mclicks on Login button&amp#27;[0m                                                                                                             &amp#27;[90m# stepDefination.ERPSteps.clicks_on_login_button()&amp#27;[0m
+Dashboard Text Displayed In Home Page
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mDashboard should be displayed&amp#27;[0m                                                                                                     &amp#27;[90m# stepDefination.ERPSteps.dashboard_should_be_displayed()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22muser should navigate to add supplier page&amp#27;[0m                                                                                         &amp#27;[90m# stepDefination.ERPSteps.user_should_navigate_to_add_supplier_page()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mCapture Supplier number&amp#27;[0m                                                                                                            &amp#27;[90m# stepDefination.ERPSteps.capture_supplier_number()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22muser enter supplier details &amp#27;[1m"Dell Corp2"&amp#27;[22m,&amp#27;[1m"Street 13"&amp#27;[22m,&amp#27;[1m"New York"&amp#27;[22m,&amp#27;[1m"USA"&amp#27;[22m,&amp#27;[1m"Akhiles71"&amp#27;[22m,&amp#27;[1m"1234567890"&amp#27;[22m,&amp#27;[1m"dell@test.com"&amp#27;[22m,&amp#27;[1m"9876543210"&amp#27;[22m,&amp#27;[1m"High"&amp#27;[22m&amp#27;[0m &amp#27;[90m# stepDefination.ERPSteps.user_enter_supplier_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22muser click add button&amp#27;[0m                                                                                                              &amp#27;[90m# stepDefination.ERPSteps.user_click_add_button()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22muser click confirm ok&amp#27;[0m                                                                                                              &amp#27;[90m# stepDefination.ERPSteps.user_click_confirm_ok()&amp#27;[0m
+  &amp#27;[31m✘&amp#27;[0m &amp#27;[31m&amp#27;[1mAnd &amp#27;[22muser click alert ok button&amp#27;[0m                                                                                                         &amp#27;[90m# stepDefination.ERPSteps.user_click_alert_ok_button()&amp#27;[0m
+        &amp#27;[31morg.openqa.selenium.ElementNotInteractableException: element not interactable
+          (Session info: chrome=146.0.7680.178)
+        Build info: version: '4.25.0', revision: '8a8aea2337'
+        System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+        Driver info: org.openqa.selenium.chrome.ChromeDriver
+        Command: [96ad5e177509fb65336232cf7a5fadf1, clickElement {id=f.AB483429724F1E6EE44F9D01008FAAED.d.669A116BC0F2064D535846B5EB64B766.e.301}]
+        Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\mmast\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63410}, goog:processID: 12096, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63410/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+        Element: [[ChromeDriver: chrome on windows (96ad5e177509fb65336232cf7a5fadf1)] -> xpath: (//button[starts-with(text(),'OK')])[6]]
+        Session ID: 96ad5e177509fb65336232cf7a5fadf1
+        	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+        	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+        	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+        	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+        	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+        	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+        	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+        	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+        	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+        	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+        	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+        	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+        	at stepDefination.ERPSteps.user_click_alert_ok_button(ERPSteps.java:96)
+        	at ✽.user click alert ok button(file:///C:/Users/mmast/eclipse-workspace/ERP_Cucumber/./featurefiles/ERP.feature:20)&amp#27;[0m
+  &amp#27;[36m↷&amp#27;[0m &amp#27;[36m&amp#27;[1mAnd &amp#27;[22muser should search for supplier number&amp#27;[0m                                                                                             &amp#27;[90m# stepDefination.ERPSteps.user_should_search_for_supplier_number()&amp#27;[0m
+  &amp#27;[36m↷&amp#27;[0m &amp#27;[36m&amp#27;[1mThen &amp#27;[22muser should validate supplier number in table&amp#27;[0m                                                                                     &amp#27;[90m# stepDefination.ERPSteps.user_should_validate_supplier_number_in_table()&amp#27;[0m
+  &amp#27;[36m↷&amp#27;[0m &amp#27;[36m&amp#27;[1mWhen &amp#27;[22muser close browser&amp#27;[0m                                                                                                                &amp#27;[90m# stepDefination.ERPSteps.user_close_browser()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 5:54:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+Apr 06, 2026 5:54:07 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;add supplier&quot;, &quot;Suppliers and Customer&quot;](3)" classname="testRunner.AppTest" time="41.024">
+    <system-out><![CDATA[
+@tag @Suppliers
+&amp#27;[1mScenario Outline:&amp#27;[22m add supplier                                                                                                             &amp#27;[90m# file:///C:/Users/mmast/eclipse-workspace/ERP_Cucumber/./featurefiles/ERP.feature:29&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mUser is on the Login Page&amp#27;[0m                                                                                                        &amp#27;[90m# stepDefination.ERPSteps.user_is_on_the_login_page()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mUser enters username &amp#27;[1m"admin"&amp#27;[22m and password &amp#27;[1m"master"&amp#27;[22m&amp#27;[0m                                                                                &amp#27;[90m# stepDefination.ERPSteps.user_enters_username_and_password(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mclicks on Login button&amp#27;[0m                                                                                                             &amp#27;[90m# stepDefination.ERPSteps.clicks_on_login_button()&amp#27;[0m
+Dashboard Text Displayed In Home Page
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mDashboard should be displayed&amp#27;[0m                                                                                                     &amp#27;[90m# stepDefination.ERPSteps.dashboard_should_be_displayed()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22muser should navigate to add supplier page&amp#27;[0m                                                                                         &amp#27;[90m# stepDefination.ERPSteps.user_should_navigate_to_add_supplier_page()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mCapture Supplier number&amp#27;[0m                                                                                                            &amp#27;[90m# stepDefination.ERPSteps.capture_supplier_number()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22muser enter supplier details &amp#27;[1m"Dell Corp3"&amp#27;[22m,&amp#27;[1m"Street 14"&amp#27;[22m,&amp#27;[1m"New York"&amp#27;[22m,&amp#27;[1m"USA"&amp#27;[22m,&amp#27;[1m"Akhiles31"&amp#27;[22m,&amp#27;[1m"1234567890"&amp#27;[22m,&amp#27;[1m"dell@test.com"&amp#27;[22m,&amp#27;[1m"9876543210"&amp#27;[22m,&amp#27;[1m"High"&amp#27;[22m&amp#27;[0m &amp#27;[90m# stepDefination.ERPSteps.user_enter_supplier_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22muser click add button&amp#27;[0m                                                                                                              &amp#27;[90m# stepDefination.ERPSteps.user_click_add_button()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22muser click confirm ok&amp#27;[0m                                                                                                              &amp#27;[90m# stepDefination.ERPSteps.user_click_confirm_ok()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22muser click alert ok button&amp#27;[0m                                                                                                         &amp#27;[90m# stepDefination.ERPSteps.user_click_alert_ok_button()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22muser should search for supplier number&amp#27;[0m                                                                                             &amp#27;[90m# stepDefination.ERPSteps.user_should_search_for_supplier_number()&amp#27;[0m
+Supplier-00000006325     Supplier-00000006325
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mThen &amp#27;[22muser should validate supplier number in table&amp#27;[0m                                                                                     &amp#27;[90m# stepDefination.ERPSteps.user_should_validate_supplier_number_in_table()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22muser close browser&amp#27;[0m                                                                                                                &amp#27;[90m# stepDefination.ERPSteps.user_close_browser()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 5:54:48 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+Apr 06, 2026 5:54:48 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;add supplier&quot;, &quot;Suppliers and Customer&quot;](4)" classname="testRunner.AppTest" time="28.682">
+    <failure message="element not interactable&#10;  (Session info: chrome=146.0.7680.178)&#10;Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [399257dc3d78579b70b323880a687814, clickElement {id=f.BFC048F7E3177C0ED8EFD2BEB1FDFB69.d.742E4EEDA36A09A4AA6573BAFA8F4734.e.262}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\mmast\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52790}, goog:processID: 13280, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52790/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on windows (399257dc3d78579b70b323880a687814)] -&gt; xpath: (//button[starts-with(text(),&apos;OK&apos;)])[6]]&#10;Session ID: 399257dc3d78579b70b323880a687814" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=146.0.7680.178)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [399257dc3d78579b70b323880a687814, clickElement {id=f.BFC048F7E3177C0ED8EFD2BEB1FDFB69.d.742E4EEDA36A09A4AA6573BAFA8F4734.e.262}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\mmast\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52790}, goog:processID: 13280, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52790/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (399257dc3d78579b70b323880a687814)] -> xpath: (//button[starts-with(text(),'OK')])[6]]
+Session ID: 399257dc3d78579b70b323880a687814
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at stepDefination.ERPSteps.user_click_alert_ok_button(ERPSteps.java:96)
+	at ✽.user click alert ok button(file:///C:/Users/mmast/eclipse-workspace/ERP_Cucumber/./featurefiles/ERP.feature:20)
+]]></failure>
+    <system-out><![CDATA[
+@tag @Suppliers
+&amp#27;[1mScenario Outline:&amp#27;[22m add supplier                                                                                                             &amp#27;[90m# file:///C:/Users/mmast/eclipse-workspace/ERP_Cucumber/./featurefiles/ERP.feature:30&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mUser is on the Login Page&amp#27;[0m                                                                                                        &amp#27;[90m# stepDefination.ERPSteps.user_is_on_the_login_page()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mUser enters username &amp#27;[1m"admin"&amp#27;[22m and password &amp#27;[1m"master"&amp#27;[22m&amp#27;[0m                                                                                &amp#27;[90m# stepDefination.ERPSteps.user_enters_username_and_password(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mclicks on Login button&amp#27;[0m                                                                                                             &amp#27;[90m# stepDefination.ERPSteps.clicks_on_login_button()&amp#27;[0m
+Dashboard Text Displayed In Home Page
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mDashboard should be displayed&amp#27;[0m                                                                                                     &amp#27;[90m# stepDefination.ERPSteps.dashboard_should_be_displayed()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22muser should navigate to add supplier page&amp#27;[0m                                                                                         &amp#27;[90m# stepDefination.ERPSteps.user_should_navigate_to_add_supplier_page()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mCapture Supplier number&amp#27;[0m                                                                                                            &amp#27;[90m# stepDefination.ERPSteps.capture_supplier_number()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22muser enter supplier details &amp#27;[1m"Dell Corp4"&amp#27;[22m,&amp#27;[1m"Street 15"&amp#27;[22m,&amp#27;[1m"New York"&amp#27;[22m,&amp#27;[1m"USA"&amp#27;[22m,&amp#27;[1m"Akhiles81"&amp#27;[22m,&amp#27;[1m"1234567890"&amp#27;[22m,&amp#27;[1m"dell@test.com"&amp#27;[22m,&amp#27;[1m"9876543210"&amp#27;[22m,&amp#27;[1m"High"&amp#27;[22m&amp#27;[0m &amp#27;[90m# stepDefination.ERPSteps.user_enter_supplier_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22muser click add button&amp#27;[0m                                                                                                              &amp#27;[90m# stepDefination.ERPSteps.user_click_add_button()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22muser click confirm ok&amp#27;[0m                                                                                                              &amp#27;[90m# stepDefination.ERPSteps.user_click_confirm_ok()&amp#27;[0m
+  &amp#27;[31m✘&amp#27;[0m &amp#27;[31m&amp#27;[1mAnd &amp#27;[22muser click alert ok button&amp#27;[0m                                                                                                         &amp#27;[90m# stepDefination.ERPSteps.user_click_alert_ok_button()&amp#27;[0m
+        &amp#27;[31morg.openqa.selenium.ElementNotInteractableException: element not interactable
+          (Session info: chrome=146.0.7680.178)
+        Build info: version: '4.25.0', revision: '8a8aea2337'
+        System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+        Driver info: org.openqa.selenium.chrome.ChromeDriver
+        Command: [399257dc3d78579b70b323880a687814, clickElement {id=f.BFC048F7E3177C0ED8EFD2BEB1FDFB69.d.742E4EEDA36A09A4AA6573BAFA8F4734.e.262}]
+        Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\mmast\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52790}, goog:processID: 13280, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52790/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+        Element: [[ChromeDriver: chrome on windows (399257dc3d78579b70b323880a687814)] -> xpath: (//button[starts-with(text(),'OK')])[6]]
+        Session ID: 399257dc3d78579b70b323880a687814
+        	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+        	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+        	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+        	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+        	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+        	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+        	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+        	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+        	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+        	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+        	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+        	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+        	at stepDefination.ERPSteps.user_click_alert_ok_button(ERPSteps.java:96)
+        	at ✽.user click alert ok button(file:///C:/Users/mmast/eclipse-workspace/ERP_Cucumber/./featurefiles/ERP.feature:20)&amp#27;[0m
+  &amp#27;[36m↷&amp#27;[0m &amp#27;[36m&amp#27;[1mAnd &amp#27;[22muser should search for supplier number&amp#27;[0m                                                                                             &amp#27;[90m# stepDefination.ERPSteps.user_should_search_for_supplier_number()&amp#27;[0m
+  &amp#27;[36m↷&amp#27;[0m &amp#27;[36m&amp#27;[1mThen &amp#27;[22muser should validate supplier number in table&amp#27;[0m                                                                                     &amp#27;[90m# stepDefination.ERPSteps.user_should_validate_supplier_number_in_table()&amp#27;[0m
+  &amp#27;[36m↷&amp#27;[0m &amp#27;[36m&amp#27;[1mWhen &amp#27;[22muser close browser&amp#27;[0m                                                                                                                &amp#27;[90m# stepDefination.ERPSteps.user_close_browser()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 5:55:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+Apr 06, 2026 5:55:29 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;add supplier&quot;, &quot;Suppliers and Customer&quot;](5)" classname="testRunner.AppTest" time="32.534">
+    <failure message="element not interactable&#10;  (Session info: chrome=146.0.7680.178)&#10;Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [18d04e7889e855b712492323f800e7e9, clickElement {id=f.6135AC4EBF1E902B5B1D22DF642B5225.d.FC006FD3F53181A619BFCDC91DF99FE3.e.286}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\mmast\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55782}, goog:processID: 17200, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55782/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on windows (18d04e7889e855b712492323f800e7e9)] -&gt; xpath: (//button[starts-with(text(),&apos;OK&apos;)])[6]]&#10;Session ID: 18d04e7889e855b712492323f800e7e9" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=146.0.7680.178)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [18d04e7889e855b712492323f800e7e9, clickElement {id=f.6135AC4EBF1E902B5B1D22DF642B5225.d.FC006FD3F53181A619BFCDC91DF99FE3.e.286}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\mmast\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55782}, goog:processID: 17200, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55782/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (18d04e7889e855b712492323f800e7e9)] -> xpath: (//button[starts-with(text(),'OK')])[6]]
+Session ID: 18d04e7889e855b712492323f800e7e9
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at stepDefination.ERPSteps.user_click_alert_ok_button(ERPSteps.java:96)
+	at ✽.user click alert ok button(file:///C:/Users/mmast/eclipse-workspace/ERP_Cucumber/./featurefiles/ERP.feature:20)
+]]></failure>
+    <system-out><![CDATA[
+@tag @Suppliers
+&amp#27;[1mScenario Outline:&amp#27;[22m add supplier                                                                                                             &amp#27;[90m# file:///C:/Users/mmast/eclipse-workspace/ERP_Cucumber/./featurefiles/ERP.feature:31&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mUser is on the Login Page&amp#27;[0m                                                                                                        &amp#27;[90m# stepDefination.ERPSteps.user_is_on_the_login_page()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mUser enters username &amp#27;[1m"admin"&amp#27;[22m and password &amp#27;[1m"master"&amp#27;[22m&amp#27;[0m                                                                                &amp#27;[90m# stepDefination.ERPSteps.user_enters_username_and_password(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mclicks on Login button&amp#27;[0m                                                                                                             &amp#27;[90m# stepDefination.ERPSteps.clicks_on_login_button()&amp#27;[0m
+Dashboard Text Displayed In Home Page
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mDashboard should be displayed&amp#27;[0m                                                                                                     &amp#27;[90m# stepDefination.ERPSteps.dashboard_should_be_displayed()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22muser should navigate to add supplier page&amp#27;[0m                                                                                         &amp#27;[90m# stepDefination.ERPSteps.user_should_navigate_to_add_supplier_page()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mCapture Supplier number&amp#27;[0m                                                                                                            &amp#27;[90m# stepDefination.ERPSteps.capture_supplier_number()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22muser enter supplier details &amp#27;[1m"Dell Corp5"&amp#27;[22m,&amp#27;[1m"Street 16"&amp#27;[22m,&amp#27;[1m"New York"&amp#27;[22m,&amp#27;[1m"USA"&amp#27;[22m,&amp#27;[1m"Akhiles31"&amp#27;[22m,&amp#27;[1m"1234567890"&amp#27;[22m,&amp#27;[1m"dell@test.com"&amp#27;[22m,&amp#27;[1m"9876543210"&amp#27;[22m,&amp#27;[1m"High"&amp#27;[22m&amp#27;[0m &amp#27;[90m# stepDefination.ERPSteps.user_enter_supplier_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22muser click add button&amp#27;[0m                                                                                                              &amp#27;[90m# stepDefination.ERPSteps.user_click_add_button()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22muser click confirm ok&amp#27;[0m                                                                                                              &amp#27;[90m# stepDefination.ERPSteps.user_click_confirm_ok()&amp#27;[0m
+  &amp#27;[31m✘&amp#27;[0m &amp#27;[31m&amp#27;[1mAnd &amp#27;[22muser click alert ok button&amp#27;[0m                                                                                                         &amp#27;[90m# stepDefination.ERPSteps.user_click_alert_ok_button()&amp#27;[0m
+        &amp#27;[31morg.openqa.selenium.ElementNotInteractableException: element not interactable
+          (Session info: chrome=146.0.7680.178)
+        Build info: version: '4.25.0', revision: '8a8aea2337'
+        System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+        Driver info: org.openqa.selenium.chrome.ChromeDriver
+        Command: [18d04e7889e855b712492323f800e7e9, clickElement {id=f.6135AC4EBF1E902B5B1D22DF642B5225.d.FC006FD3F53181A619BFCDC91DF99FE3.e.286}]
+        Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\mmast\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55782}, goog:processID: 17200, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55782/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+        Element: [[ChromeDriver: chrome on windows (18d04e7889e855b712492323f800e7e9)] -> xpath: (//button[starts-with(text(),'OK')])[6]]
+        Session ID: 18d04e7889e855b712492323f800e7e9
+        	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+        	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+        	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+        	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+        	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+        	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+        	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+        	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+        	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+        	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+        	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+        	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+        	at stepDefination.ERPSteps.user_click_alert_ok_button(ERPSteps.java:96)
+        	at ✽.user click alert ok button(file:///C:/Users/mmast/eclipse-workspace/ERP_Cucumber/./featurefiles/ERP.feature:20)&amp#27;[0m
+  &amp#27;[36m↷&amp#27;[0m &amp#27;[36m&amp#27;[1mAnd &amp#27;[22muser should search for supplier number&amp#27;[0m                                                                                             &amp#27;[90m# stepDefination.ERPSteps.user_should_search_for_supplier_number()&amp#27;[0m
+  &amp#27;[36m↷&amp#27;[0m &amp#27;[36m&amp#27;[1mThen &amp#27;[22muser should validate supplier number in table&amp#27;[0m                                                                                     &amp#27;[90m# stepDefination.ERPSteps.user_should_validate_supplier_number_in_table()&amp#27;[0m
+  &amp#27;[36m↷&amp#27;[0m &amp#27;[36m&amp#27;[1mWhen &amp#27;[22muser close browser&amp#27;[0m                                                                                                                &amp#27;[90m# stepDefination.ERPSteps.user_close_browser()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 5:55:58 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+Apr 06, 2026 5:55:58 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;add  customer&quot;, &quot;Suppliers and Customer&quot;](6)" classname="testRunner.AppTest" time="34.402">
+    <failure message="element not interactable&#10;  (Session info: chrome=146.0.7680.178)&#10;Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [7ee8190208a083b89ea998105de01e3b, clickElement {id=f.5CF469EC5BBDBA057CBFBAAF34D4130E.d.18EAB3B2B70561C625277D61B9412940.e.276}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\mmast\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59606}, goog:processID: 21144, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59606/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on windows (7ee8190208a083b89ea998105de01e3b)] -&gt; xpath: (//button[starts-with(text(),&apos;OK&apos;)])[6]]&#10;Session ID: 7ee8190208a083b89ea998105de01e3b" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=146.0.7680.178)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7ee8190208a083b89ea998105de01e3b, clickElement {id=f.5CF469EC5BBDBA057CBFBAAF34D4130E.d.18EAB3B2B70561C625277D61B9412940.e.276}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\mmast\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59606}, goog:processID: 21144, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59606/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7ee8190208a083b89ea998105de01e3b)] -> xpath: (//button[starts-with(text(),'OK')])[6]]
+Session ID: 7ee8190208a083b89ea998105de01e3b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at stepDefination.ERPSteps.user_click_alert_ok_button(ERPSteps.java:96)
+	at ✽.user click alert ok button(file:///C:/Users/mmast/eclipse-workspace/ERP_Cucumber/./featurefiles/ERP.feature:42)
+]]></failure>
+    <system-out><![CDATA[
+@tag @Customer
+&amp#27;[1mScenario Outline:&amp#27;[22m add  customer                                                                                                    &amp#27;[90m# file:///C:/Users/mmast/eclipse-workspace/ERP_Cucumber/./featurefiles/ERP.feature:49&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mUser is on the Login Page&amp#27;[0m                                                                                                &amp#27;[90m# stepDefination.ERPSteps.user_is_on_the_login_page()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mUser enters username &amp#27;[1m"admin"&amp#27;[22m and password &amp#27;[1m"master"&amp#27;[22m&amp#27;[0m                                                                        &amp#27;[90m# stepDefination.ERPSteps.user_enters_username_and_password(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mclicks on Login button&amp#27;[0m                                                                                                     &amp#27;[90m# stepDefination.ERPSteps.clicks_on_login_button()&amp#27;[0m
+Dashboard Text Displayed In Home Page
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mDashboard should be displayed&amp#27;[0m                                                                                             &amp#27;[90m# stepDefination.ERPSteps.dashboard_should_be_displayed()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22muser should navigate to add customer page&amp#27;[0m                                                                                 &amp#27;[90m# stepDefination.ERPSteps.user_should_navigate_to_add_customer_page()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mCapture customer number&amp#27;[0m                                                                                                    &amp#27;[90m# stepDefination.ERPSteps.capture_customer_number()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22muser enter customer details &amp#27;[1m"Alibe W1"&amp#27;[22m,&amp#27;[1m"Lane 55"&amp#27;[22m,&amp#27;[1m"London"&amp#27;[22m,&amp#27;[1m"UK"&amp#27;[22m,&amp#27;[1m"Alice"&amp#27;[22m,&amp#27;[1m"1122334455"&amp#27;[22m,&amp#27;[1m"alice@test.com"&amp#27;[22m,&amp#27;[1m"5544332222"&amp#27;[22m,&amp#27;[1m"Retail"&amp#27;[22m&amp#27;[0m &amp#27;[90m# stepDefination.ERPSteps.user_enter_customer_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22muser click add button&amp#27;[0m                                                                                                      &amp#27;[90m# stepDefination.ERPSteps.user_click_add_button()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22muser click confirm ok&amp#27;[0m                                                                                                      &amp#27;[90m# stepDefination.ERPSteps.user_click_confirm_ok()&amp#27;[0m
+  &amp#27;[31m✘&amp#27;[0m &amp#27;[31m&amp#27;[1mAnd &amp#27;[22muser click alert ok button&amp#27;[0m                                                                                                 &amp#27;[90m# stepDefination.ERPSteps.user_click_alert_ok_button()&amp#27;[0m
+        &amp#27;[31morg.openqa.selenium.ElementNotInteractableException: element not interactable
+          (Session info: chrome=146.0.7680.178)
+        Build info: version: '4.25.0', revision: '8a8aea2337'
+        System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+        Driver info: org.openqa.selenium.chrome.ChromeDriver
+        Command: [7ee8190208a083b89ea998105de01e3b, clickElement {id=f.5CF469EC5BBDBA057CBFBAAF34D4130E.d.18EAB3B2B70561C625277D61B9412940.e.276}]
+        Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\mmast\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59606}, goog:processID: 21144, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59606/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+        Element: [[ChromeDriver: chrome on windows (7ee8190208a083b89ea998105de01e3b)] -> xpath: (//button[starts-with(text(),'OK')])[6]]
+        Session ID: 7ee8190208a083b89ea998105de01e3b
+        	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+        	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+        	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+        	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+        	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+        	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+        	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+        	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+        	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+        	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+        	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+        	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+        	at stepDefination.ERPSteps.user_click_alert_ok_button(ERPSteps.java:96)
+        	at ✽.user click alert ok button(file:///C:/Users/mmast/eclipse-workspace/ERP_Cucumber/./featurefiles/ERP.feature:42)&amp#27;[0m
+  &amp#27;[36m↷&amp#27;[0m &amp#27;[36m&amp#27;[1mAnd &amp#27;[22muser should search for customer number&amp#27;[0m                                                                                     &amp#27;[90m# stepDefination.ERPSteps.user_should_search_for_customer_number()&amp#27;[0m
+  &amp#27;[36m↷&amp#27;[0m &amp#27;[36m&amp#27;[1mThen &amp#27;[22muser should validate customer number in table&amp#27;[0m                                                                             &amp#27;[90m# stepDefination.ERPSteps.user_should_validate_customer_number_in_table()&amp#27;[0m
+  &amp#27;[36m↷&amp#27;[0m &amp#27;[36m&amp#27;[1mWhen &amp#27;[22muser close browser&amp#27;[0m                                                                                                        &amp#27;[90m# stepDefination.ERPSteps.user_close_browser()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 5:56:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+Apr 06, 2026 5:56:30 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;add  customer&quot;, &quot;Suppliers and Customer&quot;](7)" classname="testRunner.AppTest" time="39.369">
+    <failure message="element not interactable&#10;  (Session info: chrome=146.0.7680.178)&#10;Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [3d91edb608d42fa90e5e27eaf8e7b55f, clickElement {id=f.F1B6C0EE445ABC4D7499060C39AF3BD0.d.C38929F34838ABB5B145AE751252D9C7.e.260}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\mmast\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59755}, goog:processID: 17988, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59755/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on windows (3d91edb608d42fa90e5e27eaf8e7b55f)] -&gt; xpath: (//button[starts-with(text(),&apos;OK&apos;)])[6]]&#10;Session ID: 3d91edb608d42fa90e5e27eaf8e7b55f" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=146.0.7680.178)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3d91edb608d42fa90e5e27eaf8e7b55f, clickElement {id=f.F1B6C0EE445ABC4D7499060C39AF3BD0.d.C38929F34838ABB5B145AE751252D9C7.e.260}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\mmast\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59755}, goog:processID: 17988, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59755/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3d91edb608d42fa90e5e27eaf8e7b55f)] -> xpath: (//button[starts-with(text(),'OK')])[6]]
+Session ID: 3d91edb608d42fa90e5e27eaf8e7b55f
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at stepDefination.ERPSteps.user_click_alert_ok_button(ERPSteps.java:96)
+	at ✽.user click alert ok button(file:///C:/Users/mmast/eclipse-workspace/ERP_Cucumber/./featurefiles/ERP.feature:42)
+]]></failure>
+    <system-out><![CDATA[
+@tag @Customer
+&amp#27;[1mScenario Outline:&amp#27;[22m add  customer                                                                                                    &amp#27;[90m# file:///C:/Users/mmast/eclipse-workspace/ERP_Cucumber/./featurefiles/ERP.feature:50&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mUser is on the Login Page&amp#27;[0m                                                                                                &amp#27;[90m# stepDefination.ERPSteps.user_is_on_the_login_page()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mUser enters username &amp#27;[1m"admin"&amp#27;[22m and password &amp#27;[1m"master"&amp#27;[22m&amp#27;[0m                                                                        &amp#27;[90m# stepDefination.ERPSteps.user_enters_username_and_password(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mclicks on Login button&amp#27;[0m                                                                                                     &amp#27;[90m# stepDefination.ERPSteps.clicks_on_login_button()&amp#27;[0m
+Dashboard Text Displayed In Home Page
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mDashboard should be displayed&amp#27;[0m                                                                                             &amp#27;[90m# stepDefination.ERPSteps.dashboard_should_be_displayed()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22muser should navigate to add customer page&amp#27;[0m                                                                                 &amp#27;[90m# stepDefination.ERPSteps.user_should_navigate_to_add_customer_page()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mCapture customer number&amp#27;[0m                                                                                                    &amp#27;[90m# stepDefination.ERPSteps.capture_customer_number()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22muser enter customer details &amp#27;[1m"Alice W3"&amp#27;[22m,&amp#27;[1m"Lane 57"&amp#27;[22m,&amp#27;[1m"London"&amp#27;[22m,&amp#27;[1m"UK"&amp#27;[22m,&amp#27;[1m"Alice"&amp#27;[22m,&amp#27;[1m"1122334455"&amp#27;[22m,&amp#27;[1m"aloce@test.com"&amp#27;[22m,&amp#27;[1m"5544332211"&amp#27;[22m,&amp#27;[1m"Retail"&amp#27;[22m&amp#27;[0m &amp#27;[90m# stepDefination.ERPSteps.user_enter_customer_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22muser click add button&amp#27;[0m                                                                                                      &amp#27;[90m# stepDefination.ERPSteps.user_click_add_button()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22muser click confirm ok&amp#27;[0m                                                                                                      &amp#27;[90m# stepDefination.ERPSteps.user_click_confirm_ok()&amp#27;[0m
+  &amp#27;[31m✘&amp#27;[0m &amp#27;[31m&amp#27;[1mAnd &amp#27;[22muser click alert ok button&amp#27;[0m                                                                                                 &amp#27;[90m# stepDefination.ERPSteps.user_click_alert_ok_button()&amp#27;[0m
+        &amp#27;[31morg.openqa.selenium.ElementNotInteractableException: element not interactable
+          (Session info: chrome=146.0.7680.178)
+        Build info: version: '4.25.0', revision: '8a8aea2337'
+        System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+        Driver info: org.openqa.selenium.chrome.ChromeDriver
+        Command: [3d91edb608d42fa90e5e27eaf8e7b55f, clickElement {id=f.F1B6C0EE445ABC4D7499060C39AF3BD0.d.C38929F34838ABB5B145AE751252D9C7.e.260}]
+        Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\mmast\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59755}, goog:processID: 17988, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59755/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+        Element: [[ChromeDriver: chrome on windows (3d91edb608d42fa90e5e27eaf8e7b55f)] -> xpath: (//button[starts-with(text(),'OK')])[6]]
+        Session ID: 3d91edb608d42fa90e5e27eaf8e7b55f
+        	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+        	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+        	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+        	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+        	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+        	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+        	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+        	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+        	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+        	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+        	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+        	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+        	at stepDefination.ERPSteps.user_click_alert_ok_button(ERPSteps.java:96)
+        	at ✽.user click alert ok button(file:///C:/Users/mmast/eclipse-workspace/ERP_Cucumber/./featurefiles/ERP.feature:42)&amp#27;[0m
+  &amp#27;[36m↷&amp#27;[0m &amp#27;[36m&amp#27;[1mAnd &amp#27;[22muser should search for customer number&amp#27;[0m                                                                                     &amp#27;[90m# stepDefination.ERPSteps.user_should_search_for_customer_number()&amp#27;[0m
+  &amp#27;[36m↷&amp#27;[0m &amp#27;[36m&amp#27;[1mThen &amp#27;[22muser should validate customer number in table&amp#27;[0m                                                                             &amp#27;[90m# stepDefination.ERPSteps.user_should_validate_customer_number_in_table()&amp#27;[0m
+  &amp#27;[36m↷&amp#27;[0m &amp#27;[36m&amp#27;[1mWhen &amp#27;[22muser close browser&amp#27;[0m                                                                                                        &amp#27;[90m# stepDefination.ERPSteps.user_close_browser()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 5:57:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+Apr 06, 2026 5:57:05 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;add  customer&quot;, &quot;Suppliers and Customer&quot;](8)" classname="testRunner.AppTest" time="25.048">
+    <system-out><![CDATA[
+@tag @Customer
+&amp#27;[1mScenario Outline:&amp#27;[22m add  customer                                                                                                    &amp#27;[90m# file:///C:/Users/mmast/eclipse-workspace/ERP_Cucumber/./featurefiles/ERP.feature:51&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mUser is on the Login Page&amp#27;[0m                                                                                                &amp#27;[90m# stepDefination.ERPSteps.user_is_on_the_login_page()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mUser enters username &amp#27;[1m"admin"&amp#27;[22m and password &amp#27;[1m"master"&amp#27;[22m&amp#27;[0m                                                                        &amp#27;[90m# stepDefination.ERPSteps.user_enters_username_and_password(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mclicks on Login button&amp#27;[0m                                                                                                     &amp#27;[90m# stepDefination.ERPSteps.clicks_on_login_button()&amp#27;[0m
+Dashboard Text Displayed In Home Page
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mDashboard should be displayed&amp#27;[0m                                                                                             &amp#27;[90m# stepDefination.ERPSteps.dashboard_should_be_displayed()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22muser should navigate to add customer page&amp#27;[0m                                                                                 &amp#27;[90m# stepDefination.ERPSteps.user_should_navigate_to_add_customer_page()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mCapture customer number&amp#27;[0m                                                                                                    &amp#27;[90m# stepDefination.ERPSteps.capture_customer_number()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22muser enter customer details &amp#27;[1m"Alice W5"&amp#27;[22m,&amp#27;[1m"Lane 56"&amp#27;[22m,&amp#27;[1m"London"&amp#27;[22m,&amp#27;[1m"UK"&amp#27;[22m,&amp#27;[1m"Alice"&amp#27;[22m,&amp#27;[1m"1122334455"&amp#27;[22m,&amp#27;[1m"alice@test.com"&amp#27;[22m,&amp#27;[1m"5544332211"&amp#27;[22m,&amp#27;[1m"Retail"&amp#27;[22m&amp#27;[0m &amp#27;[90m# stepDefination.ERPSteps.user_enter_customer_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22muser click add button&amp#27;[0m                                                                                                      &amp#27;[90m# stepDefination.ERPSteps.user_click_add_button()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22muser click confirm ok&amp#27;[0m                                                                                                      &amp#27;[90m# stepDefination.ERPSteps.user_click_confirm_ok()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22muser click alert ok button&amp#27;[0m                                                                                                 &amp#27;[90m# stepDefination.ERPSteps.user_click_alert_ok_button()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22muser should search for customer number&amp#27;[0m                                                                                     &amp#27;[90m# stepDefination.ERPSteps.user_should_search_for_customer_number()&amp#27;[0m
+Customer-00000004104     Customer-00000004104
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mThen &amp#27;[22muser should validate customer number in table&amp#27;[0m                                                                             &amp#27;[90m# stepDefination.ERPSteps.user_should_validate_customer_number_in_table()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22muser close browser&amp#27;[0m                                                                                                        &amp#27;[90m# stepDefination.ERPSteps.user_close_browser()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 5:57:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+Apr 06, 2026 5:57:44 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;add  customer&quot;, &quot;Suppliers and Customer&quot;](9)" classname="testRunner.AppTest" time="33.121">
+    <failure message="element not interactable&#10;  (Session info: chrome=146.0.7680.178)&#10;Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [76441626f6c0a5fa7da31291caadfd2b, clickElement {id=f.C14BFE9CDF222674DEBA540CC4674D04.d.E1D3D81CE0E9F81D344AF25ACC022219.e.271}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\mmast\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59069}, goog:processID: 9028, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59069/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on windows (76441626f6c0a5fa7da31291caadfd2b)] -&gt; xpath: (//button[starts-with(text(),&apos;OK&apos;)])[6]]&#10;Session ID: 76441626f6c0a5fa7da31291caadfd2b" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=146.0.7680.178)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [76441626f6c0a5fa7da31291caadfd2b, clickElement {id=f.C14BFE9CDF222674DEBA540CC4674D04.d.E1D3D81CE0E9F81D344AF25ACC022219.e.271}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\mmast\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59069}, goog:processID: 9028, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59069/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (76441626f6c0a5fa7da31291caadfd2b)] -> xpath: (//button[starts-with(text(),'OK')])[6]]
+Session ID: 76441626f6c0a5fa7da31291caadfd2b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at stepDefination.ERPSteps.user_click_alert_ok_button(ERPSteps.java:96)
+	at ✽.user click alert ok button(file:///C:/Users/mmast/eclipse-workspace/ERP_Cucumber/./featurefiles/ERP.feature:42)
+]]></failure>
+    <system-out><![CDATA[
+@tag @Customer
+&amp#27;[1mScenario Outline:&amp#27;[22m add  customer                                                                                                    &amp#27;[90m# file:///C:/Users/mmast/eclipse-workspace/ERP_Cucumber/./featurefiles/ERP.feature:52&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mUser is on the Login Page&amp#27;[0m                                                                                                &amp#27;[90m# stepDefination.ERPSteps.user_is_on_the_login_page()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mUser enters username &amp#27;[1m"admin"&amp#27;[22m and password &amp#27;[1m"master"&amp#27;[22m&amp#27;[0m                                                                        &amp#27;[90m# stepDefination.ERPSteps.user_enters_username_and_password(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mclicks on Login button&amp#27;[0m                                                                                                     &amp#27;[90m# stepDefination.ERPSteps.clicks_on_login_button()&amp#27;[0m
+Dashboard Text Displayed In Home Page
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mDashboard should be displayed&amp#27;[0m                                                                                             &amp#27;[90m# stepDefination.ERPSteps.dashboard_should_be_displayed()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22muser should navigate to add customer page&amp#27;[0m                                                                                 &amp#27;[90m# stepDefination.ERPSteps.user_should_navigate_to_add_customer_page()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mCapture customer number&amp#27;[0m                                                                                                    &amp#27;[90m# stepDefination.ERPSteps.capture_customer_number()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22muser enter customer details &amp#27;[1m"Alice W5"&amp#27;[22m,&amp#27;[1m"Lane 54"&amp#27;[22m,&amp#27;[1m"London"&amp#27;[22m,&amp#27;[1m"UK"&amp#27;[22m,&amp#27;[1m"Alice"&amp#27;[22m,&amp#27;[1m"1122334455"&amp#27;[22m,&amp#27;[1m"alice@test.com"&amp#27;[22m,&amp#27;[1m"5544332211"&amp#27;[22m,&amp#27;[1m"Retail"&amp#27;[22m&amp#27;[0m &amp#27;[90m# stepDefination.ERPSteps.user_enter_customer_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22muser click add button&amp#27;[0m                                                                                                      &amp#27;[90m# stepDefination.ERPSteps.user_click_add_button()&amp#27;[0m
+  &amp#27;[32m✔&amp#27;[0m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22muser click confirm ok&amp#27;[0m                                                                                                      &amp#27;[90m# stepDefination.ERPSteps.user_click_confirm_ok()&amp#27;[0m
+  &amp#27;[31m✘&amp#27;[0m &amp#27;[31m&amp#27;[1mAnd &amp#27;[22muser click alert ok button&amp#27;[0m                                                                                                 &amp#27;[90m# stepDefination.ERPSteps.user_click_alert_ok_button()&amp#27;[0m
+        &amp#27;[31morg.openqa.selenium.ElementNotInteractableException: element not interactable
+          (Session info: chrome=146.0.7680.178)
+        Build info: version: '4.25.0', revision: '8a8aea2337'
+        System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+        Driver info: org.openqa.selenium.chrome.ChromeDriver
+        Command: [76441626f6c0a5fa7da31291caadfd2b, clickElement {id=f.C14BFE9CDF222674DEBA540CC4674D04.d.E1D3D81CE0E9F81D344AF25ACC022219.e.271}]
+        Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\mmast\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59069}, goog:processID: 9028, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59069/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+        Element: [[ChromeDriver: chrome on windows (76441626f6c0a5fa7da31291caadfd2b)] -> xpath: (//button[starts-with(text(),'OK')])[6]]
+        Session ID: 76441626f6c0a5fa7da31291caadfd2b
+        	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+        	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+        	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+        	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+        	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+        	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+        	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+        	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+        	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+        	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+        	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+        	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+        	at stepDefination.ERPSteps.user_click_alert_ok_button(ERPSteps.java:96)
+        	at ✽.user click alert ok button(file:///C:/Users/mmast/eclipse-workspace/ERP_Cucumber/./featurefiles/ERP.feature:42)&amp#27;[0m
+  &amp#27;[36m↷&amp#27;[0m &amp#27;[36m&amp#27;[1mAnd &amp#27;[22muser should search for customer number&amp#27;[0m                                                                                     &amp#27;[90m# stepDefination.ERPSteps.user_should_search_for_customer_number()&amp#27;[0m
+  &amp#27;[36m↷&amp#27;[0m &amp#27;[36m&amp#27;[1mThen &amp#27;[22muser should validate customer number in table&amp#27;[0m                                                                             &amp#27;[90m# stepDefination.ERPSteps.user_should_validate_customer_number_in_table()&amp#27;[0m
+  &amp#27;[36m↷&amp#27;[0m &amp#27;[36m&amp#27;[1mWhen &amp#27;[22muser close browser&amp#27;[0m                                                                                                        &amp#27;[90m# stepDefination.ERPSteps.user_close_browser()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 5:58:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+Apr 06, 2026 5:58:09 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+</testsuite>
